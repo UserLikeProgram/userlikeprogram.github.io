@@ -1,0 +1,195 @@
+@import 'variables'
+@import 'modal'
+@import 'offer'
+@import 'customers'
+
+body 
+	background: #fff
+	font-family: 'Roboto', sans-serif
+	margin: 0px
+.button 
+	font-size: 14px
+	background-color: $active-color
+	border: none
+	color: $text-color-light
+	padding: 13px 22px
+	border-radius: 5px
+	&:hover 
+		background: lighten($active-color, 0.5)
+	img 
+		vertical-align: middle
+h3 
+	margin: 0
+		/* Header */
+.header 
+	&-logo 
+		background: url(../img/header-logo.png) center no-repeat
+		background-size: 100%
+		width: 191px
+		height: 61px
+	padding: 10px 0
+	&-contacts 
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&__phone 
+			font-size: 22px
+			margin-right: 13px
+			&s 
+				display: flex
+			/* Main */
+
+.main 
+	background: url(../img/header-bg.jpg) no-repeat center / cover
+	padding: 65px 0 87px 0
+	&-img 
+		position: relative 
+		z-index: 1
+		&:before 
+			position: absolute
+			content: ''
+			display: block
+			border: 1px solid grey
+			border-radius: 50%
+			z-index: -1
+			height: 390px
+			margin-left: 50px
+			width: 390px
+	&-wrap 
+		display: flex
+		align-items: center
+	&-text 
+		color: $text-color-light
+		margin-left: 30px
+		&__title 
+			font-size: 41px
+			line-height: 42px
+			span 
+				font-size: 28px
+				font-weight: 400
+				display: block
+	&-form 
+		background: rgba(255, 255, 255, 0.2)
+		padding: 30px
+		&__title
+			font-size: 20px
+			font-weight: 300
+			line-height: 30px
+			span 
+				font-weight: 700
+				text-transform: uppercase
+				margin-bottom: 20px
+				display: block
+		&__small 
+			display: block
+			margin-top: 10px
+			font-size: 14px
+			font-weight: 300
+			line-height: 30px
+.form 
+	&__input 
+		width: 200px
+		padding: 18px 0 18px 18px
+		border-radius: 3px
+		border: none
+		margin-right: 10px
+	&__button
+		padding: 18px
+
+// Features
+
+.features 
+	padding: 49px 0 55px 0
+	background: #f4f4f4
+	&-numbers
+		display: flex
+		text-align: center
+		justify-content: space-between
+	&-num 
+		color: #f39003
+		font-size: 36px
+		font-weight: 900
+		text-transform: uppercase
+		width: 33%
+		span 
+			margin-top: 15px
+			color: #373737
+			font-family: Roboto
+			font-size: 16px
+			font-weight: 400
+			line-height: 20px
+			display: block
+	&-blocks 
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin-top: 40px
+	&-block 
+		background: #fff
+		box-sizing: content-box
+		width: 300px
+		display: flex
+		align-items: center
+		padding: 28px 25px
+		margin-bottom: 30px
+		&__text 
+			margin-left: 11px
+		&__title 
+			font-size: 15px
+			font-weight: 700
+		&__descr
+			font-weight: 300
+			font-size: 14px
+			margin-top: 5px
+
+// Product 
+
+.product 
+	padding: 57px 0 73px 0
+	&-title 
+		font-size: 27px
+		font-weight: 700
+		line-height: 18px
+		text-transform: uppercase
+		color: #313131
+		text-align: center
+		margin-bottom: 40px
+	&-blocks 
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+	&-block 
+		margin-bottom: 35px
+		&__img 
+			min-height: 310px
+		&__pad
+			padding: 25px
+		&__title 
+			font-size: 20px
+			font-weight: 500
+			line-height: 19.99px
+			color: #313131
+			margin-bottom: 30px
+			text-align: center
+		&__button-o 
+			padding: 16px 28px 
+			background: inherit
+			border: 1px solid #9b9b9b
+			color: #9b9b9b
+			margin-left: 60px
+		&__button 
+			padding: 18px 28px 
+			margin-left: 12px
+footer 
+	background: #1b1b1b
+	.foot 
+		text-align: center
+		padding: 36px 0
+
+
+
+@import 'contacts'
+@import 'media'
+
+
+
