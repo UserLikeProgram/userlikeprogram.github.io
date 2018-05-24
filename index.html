@@ -9,7 +9,129 @@
 
 		<title>Стартовый шаблон</title>
 
+	<style>
+		/* Header */
 
+		.header {
+		  padding: 10px 0;
+		}
+
+		.header-logo {
+		  background: url("img/header-logo.png") center no-repeat;
+		  background-size: 100%;
+		  width: 191px;
+		  height: 61px;
+		}
+
+		.header-contacts {
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-pack: end;
+		  -ms-flex-pack: end;
+		  justify-content: flex-end;
+		  -webkit-box-align: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		}
+
+		.header-contacts__phone {
+		  font-size: 22px;
+		  margin-right: 13px;
+		  /* Main */
+		}
+
+		.header-contacts__phones {
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		}
+
+		.main {
+		  background: url("img/header-bg.jpg") no-repeat center/cover;
+		  padding: 65px 0 87px 0;
+		}
+
+		.main-img {
+		  position: relative;
+		  z-index: 1;
+		}
+
+		.main-img:before {
+		  position: absolute;
+		  content: '';
+		  display: block;
+		  border: 1px solid grey;
+		  border-radius: 50%;
+		  z-index: -1;
+		  height: 390px;
+		  margin-left: 50px;
+		  width: 390px;
+		}
+
+		.main-wrap {
+		  display: -webkit-box;
+		  display: -ms-flexbox;
+		  display: flex;
+		  -webkit-box-align: center;
+		  -ms-flex-align: center;
+		  align-items: center;
+		}
+
+		.main-text {
+		  color: #ffffff;
+		  margin-left: 30px;
+		}
+
+		.main-text__title {
+		  font-size: 41px;
+		  line-height: 42px;
+		}
+
+		.main-text__title span {
+		  font-size: 28px;
+		  font-weight: 400;
+		  display: block;
+		}
+
+		.main-form {
+		  background: rgba(255, 255, 255, 0.2);
+		  padding: 30px;
+		}
+
+		.main-form__title {
+		  font-size: 20px;
+		  font-weight: 300;
+		  line-height: 30px;
+		}
+
+		.main-form__title span {
+		  font-weight: 700;
+		  text-transform: uppercase;
+		  margin-bottom: 20px;
+		  display: block;
+		}
+
+		.main-form__small {
+		  display: block;
+		  margin-top: 10px;
+		  font-size: 14px;
+		  font-weight: 300;
+		  line-height: 30px;
+		}
+
+		.form__input {
+		  width: 200px;
+		  padding: 18px 0 18px 18px;
+		  border-radius: 3px;
+		  border: none;
+		  margin-right: 10px;
+		}
+
+		.form__button {
+		  padding: 18px;
+		}
+	</style>
 	<body>
 
 		<header class="header">
@@ -349,9 +471,6 @@
 				</div>
 				<!-- /.container -->
 			</footer>
-
-		<!-- Animate Css -->
-		<link rel="stylesheet" href="css/animate.css">
 
 		<!-- Bootstrap grid CSS -->
 		<link href="css/bootstrap-grid.min.css" rel="stylesheet">
