@@ -379,36 +379,40 @@
 					<div class="howwework-item">
 						<div class="img-b">
 							<div class="fotogal_slider" id="fotogal_slider">
-								<div>
-									<a href="#" rel="howwework_photo">
-										<img src="img/howwework__img1.jpg" alt="">
-									</a>
+								<div class="prev btn-align"><</div>
+								<div class="sec1">
+									<div>
+										<a href="#" rel="howwework_photo">
+											<img src="img/howwework__img1.jpg" alt="">
+										</a>
+									</div>
+									<div>
+										<a href="#" rel="howwework_photo">
+											<img src="img/howwework__img2.jpg" alt="">
+										</a>
+									</div>
+									<div>
+										<a href="#" rel="howwework_photo">
+											<img src="img/howwework__img3.jpg" alt="">
+										</a>
+									</div>
+									<div>
+										<a href="#" rel="howwework_photo">
+											<img src="img/howwework__img4.jpg" alt="">
+										</a>
+									</div>
+									<div>
+										<a href="#" rel="howwework_photo">
+											<img src="img/howwework__img5.jpg" alt="">
+										</a>
+									</div>
+									<div>
+										<a href="#" rel="howwework_photo">
+											<img src="img/howwework__img6.jpg" alt="">
+										</a>
+									</div>
 								</div>
-								<div>
-									<a href="#" rel="howwework_photo">
-										<img src="img/howwework__img2.jpg" alt="">
-									</a>
-								</div>
-								<div>
-									<a href="#" rel="howwework_photo">
-										<img src="img/howwework__img3.jpg" alt="">
-									</a>
-								</div>
-								<div>
-									<a href="#" rel="howwework_photo">
-										<img src="img/howwework__img4.jpg" alt="">
-									</a>
-								</div>
-								<div>
-									<a href="#" rel="howwework_photo">
-										<img src="img/howwework__img5.jpg" alt="">
-									</a>
-								</div>
-								<div>
-									<a href="#" rel="howwework_photo">
-										<img src="img/howwework__img6.jpg" alt="">
-									</a>
-								</div>
+								<div class="next btn-align">></div>
 							</div>
 							<div id="fotogal_slider_nav" class="fotogal_slider_nav">
 								<div class="prev"><</div>
@@ -532,8 +536,6 @@
 			<link href="css/bootstrap-grid.min.css" rel="stylesheet">
 			<!-- Bootstrap grid CSS -->
 			<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic" rel="stylesheet">
-			<!-- Custom styles for this temlate -->
-			<link href="css/main.css" rel="stylesheet">
 			
 			<!-- Bootstrap core JavaScript ================================================== -->
 			<!-- Placed at the end of the document so the pages load faster -->
@@ -546,19 +548,33 @@
 			</script>
 			<script src="slick/slick.min.js"></script>
 			<script>
-				$('.fotogal_slider').slick({
-					arrows: false,
+				$('.sec1').slick({
 					fade: true,
+					arrow: false,
+		      prevArrow: '.prev',
+					nextArrow: '.next',
 					asNavFor: '.sec2',
 				});
 				$('.sec2').slick({
 					slidesToShow: 4,
-					asNavFor: '.fotogal_slider',
+					asNavFor: '.sec1',
 					focusOnSelect: true,
 					prevArrow: '.prev',
 					nextArrow: '.next',
+					responsive: [
+					   {
+					     breakpoint: 576,
+					     settings: {
+					       slidesToShow: 1,
+					       slidesToScroll: 1,
+					     }
+					   }
+			     ]
 				});
 			</script>
+
+			<!-- Custom styles for this temlate -->
+			<link href="css/main.css" rel="stylesheet">
 			
 		</body>
 	</html>
